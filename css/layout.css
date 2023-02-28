@@ -1,9 +1,9 @@
 /********** Fixes **********/
 
 * {
-  margin:0;
-  padding:0;
-  border:0;
+  margin: 0;
+  padding: 0;
+  border: 0;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -16,6 +16,7 @@
   visibility: hidden;
   height: 0;
   line-height: 0;
+  overflow: auto;
 }
 
 .clear {
@@ -25,3 +26,42 @@
 /* Positioning Classes */
 
 
+.row {
+  clear: both;
+  margin-bottom: 2%;
+}
+
+.row:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  overflow: auto;
+}
+
+[class*="col-"] {
+  float: left;
+  margin-left: 2%;
+}
+
+[class*="col-"]:first-child {
+  margin-left: 0;
+}
+
+.col-big {
+  width: 66%;
+}
+
+.col-small {
+  width: 32%;
+}
+
+
+.border_right {
+  display: inline-block;
+  width: 32%;
+  vertical-align: top;
+  padding-left: 20px;
+}
